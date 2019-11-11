@@ -69,16 +69,12 @@ class Badges extends React.Component {
                     </div>
                 </div>
 
-                <div className="Badge__container">
+                <div className="Badges__container">
                     <div className="Badges__buttons">
                         <a href="/badges/new" className='btn btn-primary'>Nueva cedula</a>
                     </div>
 
-                    <div className="Badges__list">
-                        <div className="Badges__container">
-                            <BadgesList badges={this.state.data} />
-                        </div>
-                    </div>
+                    <BadgesList badges={this.state.data} />
                 </div>
             </div>
         )
